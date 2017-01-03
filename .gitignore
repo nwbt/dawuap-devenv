@@ -1,0 +1,8 @@
+pkg-nwbt/
+*.swp
+.vagrant/
+clean-checkouts/
+HydraPlatform/
+HydraShapefileApp/
+data/
+db/
