@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-	config.vm.box = "openSUSE-42.2"
+	config.vm.box = "nwbtco/opensuse42.2"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -49,7 +49,7 @@ Vagrant.configure(2) do |config|
 		salt.run_highstate = true
 		salt.verbose = true
 		salt.colorize = true
-		salt.log_level = "info"
+		salt.log_level = "warning"
 
 	end
 
