@@ -6,6 +6,12 @@
 # Distributed under terms of the MIT license.
 #
 
-rm -fr HydraPlatform/ HydraShapefileApp/ data/
-cp -r ../clean-checkouts/* .
+cd HydraPlatform/
+git reset --hard 
+cd ..
+cd HydraShapefileApp/
+git reset --hard 
+cd ..
+rm -fr data
+cp -r ../clean-checkouts/data .
 
